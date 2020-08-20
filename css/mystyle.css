@@ -50,7 +50,7 @@ body{
   line-height: 1.5em;
   letter-spacing: .025em;
   text-transform: uppercase;
-  padding: 12px 56px;
+  padding: 12px 30px;
 }
 
 .salesPic {
@@ -61,3 +61,8 @@ body{
 	padding-left: 5vw;
 	padding-right: 5vw;
 }
+
+/* .my-auto {
+	margin-top: auto;
+	margin-bottom: auto;
+} */
