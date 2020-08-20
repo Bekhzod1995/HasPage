@@ -27,8 +27,12 @@ body{
 	padding: 20px;
 }
 
+.navbar > li:hover {
+	background-color: rgba(255, 255, 255, 0.192);
+}
+
 .background-text{
-	padding-left: 6vw;
+	padding-left: 8vw;
 	width: 50vw;
 }
 
@@ -36,15 +40,24 @@ body{
 	color: #000;
   background-color: #ffe000;
 	font-size: 18px;
-	    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    outline: 0;
-    /* font-size: 14px; */
-    font-style: normal;
-    font-family: Oswald,sans-serif;
-    line-height: 1.5em;
-    letter-spacing: .025em;
-    text-transform: uppercase;
-    padding: 12px 56px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  outline: 0;
+  /* font-size: 14px; */
+  font-style: normal;
+  font-family: Oswald,sans-serif;
+  line-height: 1.5em;
+  letter-spacing: .025em;
+  text-transform: uppercase;
+  padding: 12px 56px;
+}
+
+.salesPic {
+	max-width: 100%;
+}
+
+.container-fluid {
+	padding-left: 5vw;
+	padding-right: 5vw;
 }
