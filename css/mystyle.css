@@ -1,0 +1,29 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.background-image {
+  background-image: url(../pictures/1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+	background-color: #464646;
+	border: 1px solid red;
+}
+
+.navbar {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding-top: 10px;
+	background-color: black;
+	align-items: baseline;
+}
+
+.navbar > li {
+	cursor: pointer;
+	color: white;
+	padding: 20px;
+}
