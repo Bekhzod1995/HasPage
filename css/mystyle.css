@@ -7,10 +7,9 @@ body{
   background-image: url(../pictures/1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
 	background-color: #464646;
-	border: 1px solid red;
 }
 
 .navbar {
@@ -26,4 +25,26 @@ body{
 	cursor: pointer;
 	color: white;
 	padding: 20px;
+}
+
+.background-text{
+	padding-left: 6vw;
+	width: 50vw;
+}
+
+.btn-warning {
+	color: #000;
+  background-color: #ffe000;
+	font-size: 18px;
+	    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    outline: 0;
+    /* font-size: 14px; */
+    font-style: normal;
+    font-family: Oswald,sans-serif;
+    line-height: 1.5em;
+    letter-spacing: .025em;
+    text-transform: uppercase;
+    padding: 12px 56px;
 }
