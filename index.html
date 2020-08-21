@@ -12,6 +12,7 @@
 </head>
 
 <body>
+	<div class="cursor"></div>
 	<!--Header-->
 	<div>
 		<div class="background-image">
@@ -380,6 +381,78 @@
 					<br>
 				</div>
 		</div>
+		<div class="container-fluid">
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<h1 style="text-align: center; font-weight: bold;">
+						<span>
+							ДЕЙСТВУЕТ ГИБКАЯ СИСТЕМА СКИДОК. ПОДПИШИСЬ НА НАС В ИНСТАГРАМ ИЛИ ТЕЛЕГРАМ И БУДЬ В КУРСЕ АКТУАЛЬНЫХ АКЦИЙ И
+							СКИДКАХ!
+						</span>
+					</h1>
+					<br>
+					<h6 class="priceItalic-sale">Наслаждайся своей красотой</h6>
+					<br>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="image-scale-div">
+						<img src="./pictures/sale.jpg" class="image-scale" alt="">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="image-scale-div">
+						<img src="./pictures/sale.jpg" class="image-scale" alt="">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="image-scale-div">
+						<img src="./pictures/sale.jpg" class="image-scale" alt="">
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="image-scale-div">
+						<img src="./pictures/sale.jpg" class="image-scale" alt="">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="image-scale-div">
+						<img src="./pictures/sale.jpg" class="image-scale" alt="">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="image-scale-div">
+						<img src="./pictures/sale.jpg" class="image-scale" alt="">
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="image-scale-div">
+						<img src="./pictures/sale.jpg" class="image-scale" alt="">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="image-scale-div">
+						<img src="./pictures/sale.jpg" class="image-scale" alt="">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="image-scale-div">
+						<img src="./pictures/sale.jpg" class="image-scale" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	</h1>
 	</div>
@@ -387,6 +460,20 @@
 
 	<!--Footer-->
 	<div>Footer</div>
+	<script>
+		const cursor = document.querySelector('.cursor');
+		document.addEventListener('mousemove', e => {
+			cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+		});
+
+		document.addEventListener('click', () => {
+			cursor.classList.add("expand");
+
+			setTimeout(() => {
+				cursor.classList.remove("expand");	
+			}, 500);
+		});
+	</script>
 	<script src="./js/slim.min.js"></script>
 	<script src="./popper.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
