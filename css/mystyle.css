@@ -62,7 +62,25 @@ body{
 	padding-right: 5vw;
 }
 
-/* .my-auto {
-	margin-top: auto;
-	margin-bottom: auto;
-} */
+.image-scale-div {
+	overflow: hidden;
+}
+
+.image-scale {
+	max-width: 100%;
+}
+
+.image-scale:hover {
+	transform: scale(1.2);
+	transition: 1s ease-out;
+	cursor: pointer;
+}
+
+.priceItalic {
+    font-size: 17px;
+    line-height: 26px;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+}
