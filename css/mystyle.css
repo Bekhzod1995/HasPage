@@ -12,6 +12,15 @@ body{
 	background-color: #464646;
 }
 
+.background-image-price {
+  background-image: url(../pictures/price.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+	background-color: #464646;
+}
+
 .navbar {
 	display: flex;
 	justify-content: center;
