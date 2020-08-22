@@ -2,7 +2,7 @@ body{
 	margin: 0;
   padding: 0;
   height: 100vh;
-  /* cursor: none; */
+  cursor: none;
 }
 
 .cursor {
@@ -137,11 +137,12 @@ body{
 }
 
 .image-scale-div {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .image-scale {
-	max-width: 100%;
+  max-width: 100%;
+  transition: 0.5s ease-in-out;
 }
 
 .image-scale:hover {
@@ -166,4 +167,12 @@ body{
     font-weight: 400;
     text-align: center;
     color: black;
+}
+
+.ribbon-background {
+  background-color: black;
+}
+
+.new-ribbon {
+  display: flex;
 }
