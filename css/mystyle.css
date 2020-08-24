@@ -88,7 +88,7 @@ body{
 
 .navbar {
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 	list-style: none;
 	padding-top: 10px;
 	background-color: black;
@@ -106,11 +106,11 @@ body{
 }
 
 .background-text{
-	padding-left: 8vw;
-	width: 50vw;
+  width: 35vw;
+  padding: 120px 0;
 }
 
-.btn-warning {
+/* .btn-warning {
 	color: #000;
   background-color: #ffe000;
 	font-size: 18px;
@@ -118,23 +118,18 @@ body{
   vertical-align: middle;
   position: relative;
   outline: 0;
-  /* font-size: 14px; */
   font-style: normal;
   font-family: Oswald,sans-serif;
   line-height: 1.5em;
   letter-spacing: .025em;
   text-transform: uppercase;
   padding: 12px 30px;
-}
+} */
 
 .salesPic {
 	max-width: 100%;
 }
 
-.container-fluid {
-	padding-left: 5vw;
-	padding-right: 5vw;
-}
 
 .image-scale-div {
   overflow: hidden;
@@ -166,7 +161,7 @@ body{
     font-style: italic;
     font-weight: 400;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 .ribbon-background {
@@ -175,4 +170,39 @@ body{
 
 .new-ribbon {
   display: flex;
+  align-items: center;
+  padding: 2rem 0;
 }
+
+/*fixing bugs */
+
+.custom-container {
+  width: 1430px;
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 100%;
+}
+
+.section {
+  padding-top: 80px;
+  /* padding-bottom: 80px; */
+}
+
+.listInWallpaper {
+  color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.custom-button {
+  font-size: 1.3rem;
+  color: white;
+  padding: 15px;
+}
+
+.spaces-between-blocks {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* #828282 */
