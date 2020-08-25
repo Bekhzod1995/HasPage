@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/mystyle.css">
 	<link rel="stylesheet" href="./fontawesome/all.css" type="text/css">
+	<link href="./css/hamburgers.css" rel="stylesheet">
 	<script src="./fontawesome/all.js"></script>
 	<title>Depilation</title>
 </head>
@@ -16,36 +17,120 @@
 	<!--Header-->
 	<header>
 		<div class="background-image">
+			<nav role="navigation" class="mobileNav">
+				<div id="menuToggle">
+					<!--
+								    A fake / hidden checkbox is used as click reciever,
+								    so you can use the :checked selector on it.
+								    -->
+					<input type="checkbox" />
+
+					<!--
+								    Some spans to act as a hamburger.
+								    
+								    They are acting like a real hamburger,
+								    not that McDonalds stuff.
+								    -->
+					<span></span>
+					<span></span>
+					<span></span>
+
+					<!--
+								    Too bad the menu has to be inside of the button
+								    but hey, it's pure CSS magic.
+								    -->
+					<ul id="menu">
+						<a href="#">
+							<li>ГЛАВНАЯ</li>
+						</a>
+						<a href="#">
+							<li>УСЛУГИ</li>
+						</a>
+						<a href="#">
+							<li>АКЦИИ</li>
+						</a>
+						<a href="#">
+							<li>ПОЧИТАТЬ</li>
+						</a>
+						<a href="#">
+							<li>О СТУДИИ</li>
+						</a>
+						<a href="#">
+							<li>ОТЗЫВЫ</li>
+						</a>
+						<a href="#">
+							<li>НАШИ КОНТАКТЫ</li>
+						</a>
+						<a href="#">
+							<li>
+								<i class="fas fa-phone"></i> 9999999999999
+							</li>
+						</a>
+						<a href="#">
+							<li>
+									<i class="fab fa-telegram"></i>ТЕЛЕГРАМ
+							</li>
+						</a>
+						<a href="#">
+							<li>
+								<img width="30" src="./pictures/ru.png" alt="Русский">
+								<img width="30" src="./pictures/uz.png" alt="Узбекский">
+							</li>
+						</a>
+					</ul>
+				</div>
+			</nav>
 			<!--Navbar-->
 			<div class="custom-container">
 				<nav>
 					<ul class="navbar">
 						<li>logo</li>
 						<!-- <li><img src="./pictures/logo.png" alt="logo" width="50px"></li> -->
-						<li>ГЛАВНАЯ</li>
-						<li>УСЛУГИ</li>
-						<li>АКЦИИ</li>
-						<li>ПОЧИТАТЬ</li>
-						<li>О СТУДИИ</li>
-						<li>ОТЗЫВЫ</li>
-						<li>НАШИ КОНТАКТЫ</li>
-						<li>
-							<span style="font-size: 18px; color: Dodgerblue; margin-right: 3px;">
-								<i class="fas fa-phone"></i>
-							</span>
-							9999999999999
-						</li>
-						<li>
-							<span style="font-size: 18px; color: Dodgerblue; margin-right: 3px;">
-								<i class="fab fa-telegram"></i>
-							</span>
-							ТЕЛЕГРАМ
-						</li>
-						<li><img src="./pictures/ru.png" alt="Русский"></li>
-						<li><img src="./pictures/uz.png" alt="Узбекский"></li>
+						<a href="#">
+							<li>ГЛАВНАЯ</li>
+						</a>
+						<a href="#">
+							<li>УСЛУГИ</li>
+						</a>
+						<a href="#">
+							<li>АКЦИИ</li>
+						</a>
+						<a href="#">
+							<li>ПОЧИТАТЬ</li>
+						</a>
+						<a href="#">
+							<li>О СТУДИИ</li>
+						</a>
+						<a href="#">
+							<li>ОТЗЫВЫ</li>
+						</a>
+						<a href="#">
+							<li>НАШИ КОНТАКТЫ</li>
+						</a>
+						<a href="#">
+							<li>
+								<span style="font-size: 18px; color: Dodgerblue; margin-right: 3px;">
+									<i class="fas fa-phone"></i>
+								</span>
+								9999999999999
+							</li>
+						</a>
+						<a href="#">
+							<li>
+								<span style="font-size: 18px; color: Dodgerblue; margin-right: 3px;">
+									<i class="fab fa-telegram"></i>
+								</span>
+								ТЕЛЕГРАМ
+							</li>
+						</a>
+						<a href="#">
+							<li><img src="./pictures/ru.png" alt="Русский"></li>
+						</a>
+						<a href="#">
+							<li><img src="./pictures/uz.png" alt="Узбекский"></li>
+						</a>
 					</ul>
 				</nav>
-
 				<!-- <div class="custom-container"> -->
 				<!-- <div class="section"> -->
 				<div class="background-text">
@@ -192,7 +277,7 @@
 				<div class="new-ribbon">
 					<h1 style="color: white">ЗАПИШИТЕСЬ НА ЛАЗЕРНУЮ ЭПИЛЯЦИЮ И ИЗБАВЬТЕСЬ ОТ НЕЖЕЛАТЕЛЬНЫХ ВОЛОС НАВСЕГДА!</h1>
 					<div>
-						<button type="button" class="btn btn-warning">ЗАПИСАТЬСЯ</button>
+						<button type="button" class="btn btn-warning custom-button">ЗАПИСАТЬСЯ</button>
 					</div>
 				</div>
 			</div>
@@ -366,7 +451,7 @@
 								</p>
 							</div>
 						</div>
-					
+
 					</div>
 				</div>
 			</div>
@@ -377,9 +462,9 @@
 					<div class="col-md-2"></div>
 					<div class="col-md-8">
 						<h1 style="text-align: center; font-weight: bold;">
-								ДЕЙСТВУЕТ ГИБКАЯ СИСТЕМА СКИДОК. ПОДПИШИСЬ НА НАС В ИНСТАГРАМ ИЛИ ТЕЛЕГРАМ И БУДЬ В КУРСЕ АКТУАЛЬНЫХ
-								АКЦИЙ И
-								СКИДКАХ!
+							ДЕЙСТВУЕТ ГИБКАЯ СИСТЕМА СКИДОК. ПОДПИШИСЬ НА НАС В ИНСТАГРАМ ИЛИ ТЕЛЕГРАМ И БУДЬ В КУРСЕ АКТУАЛЬНЫХ
+							АКЦИЙ И
+							СКИДКАХ!
 						</h1>
 						<p>&nbsp</p>
 					</div>
@@ -456,7 +541,8 @@
 							<p style="color: rgba(58, 58, 58, 0.849)">
 								Процедура проводится 1 раз в 21-30 дней. Количество процедур подбирается индивидуально, в зависимости от
 								типа волос.
-								Среднее количество процедур 4-6. Эффект 100% гладкой кожи без волос достигается после прохождения полного
+								Среднее количество процедур 4-6. Эффект 100% гладкой кожи без волос достигается после прохождения
+								полного
 								курса. После
 								первой процедуры уже заметен результат, волос становится меньше, исчезает раздражение после бритья,
 								пропадают вросшие
@@ -483,8 +569,9 @@
 								-в течение 3 дней не наносить на кожу спирто-содержащие средства;
 								-в промежутках между процедурами для удаления отрастающих волос использовать только бритье;
 								-нельзя использовать воск, шугаринг, выдергивать волосы пинцетом или электроэпилятором.
-					
-								После прохождения процедуры сразу запишитесь на следующую, чтобы иметь возможность попасть на процедуру в
+
+								После прохождения процедуры сразу запишитесь на следующую, чтобы иметь возможность попасть на процедуру
+								в
 								нужное время.
 							</p>
 						</div>
@@ -507,22 +594,53 @@
 
 	<!--Footer-->
 	<footer>
-
+		<div class="custom-container">
+			<div class="spaces-between-blocks">
+				<div class="row">
+					<div class="col-md-3">
+						<h6>Адрес:</h6>
+						<p><i class="fas fa-map-marker"></i>&nbsp Айбек 14, Ташкент</p>
+						<p><i class="fas fa-phone"></i>&nbsp 998999999999</p>
+						<p><i class="far fa-envelope"></i>&nbsp depilation@gmail.com</p>
+						<p>&nbsp</p>
+						<p><i class="fab fa-instagram"></i> depilation</p>
+						<p><i class="fab fa-facebook-f"></i> depilation</p>
+					</div>
+					<div class="col-md-3">
+						<p>Эпиляция ног</p>
+						<p>Эпиляция ног</p>
+						<p>Эпиляция ног</p>
+						<p>Эпиляция ног</p>
+						<p>Эпиляция ног</p>
+						<p>Эпиляция ног</p>
+						<p>Эпиляция ног</p>
+						<p>Эпиляция ног</p>
+					</div>
+					<div class="col-md-3">
+						<p>Эпиляция ног</p>
+						<p>Эпиляция ног</p>
+						<p>Эпиляция ног</p>
+						<p>Эпиляция ног</p>
+						<p>Эпиляция ног</p>
+						<p>Эпиляция ног</p>
+						<p>Эпиляция ног</p>
+						<p>Эпиляция ног</p>
+					</div>
+					<div class="col-md-3">TUT BUDET KARTA</div>
+				</div>
+			</div>
+		</div>
 	</footer>
-	<!-- <script>
-		const cursor = document.querySelector('.cursor');
-		document.addEventListener('mousemove', e => {
-			cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+	<script>
+		// Look for .hamburger
+		var hamburger = document.querySelector(".hamburger");
+		// On click
+		hamburger.addEventListener("click", function () {
+			// Toggle class "is-active"
+			hamburger.classList.toggle("is-active");
+			// Do something else, like open/close menu
 		});
-
-		document.addEventListener('click', () => {
-			cursor.classList.add("expand");
-
-			setTimeout(() => {
-				cursor.classList.remove("expand");
-			}, 500);
-		});
-	</script> -->
+	</script>
 	<script src="./js/slim.min.js"></script>
 	<script src="./popper.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
