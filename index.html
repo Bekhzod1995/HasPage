@@ -5,153 +5,94 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" href="./css/mystyle.css">
 	<link rel="stylesheet" href="./fontawesome/all.css" type="text/css">
 	<link href="./css/hamburgers.css" rel="stylesheet">
+	
+	<!-- custom styles&js -->
+	<link rel="stylesheet" href="./css/mystyle.css">
 	<script src="./fontawesome/all.js"></script>
+	<!-- custom styles&js -->
+
 	<title>Depilation</title>
 </head>
 
 <body>
 	<!-- <div class="cursor"></div> -->
 	<!--Header-->
-	<header>
-		<div class="background-image">
-			<nav role="navigation" class="mobileNav">
-				<div id="menuToggle">
-					<!--
-								    A fake / hidden checkbox is used as click reciever,
-								    so you can use the :checked selector on it.
-								    -->
-					<input type="checkbox" />
-
-					<!--
-								    Some spans to act as a hamburger.
-								    
-								    They are acting like a real hamburger,
-								    not that McDonalds stuff.
-								    -->
-					<span></span>
-					<span></span>
-					<span></span>
-
-					<!--
-								    Too bad the menu has to be inside of the button
-								    but hey, it's pure CSS magic.
-								    -->
-					<ul id="menu">
-						<a href="#">
-							<li>ГЛАВНАЯ</li>
-						</a>
-						<a href="#">
-							<li>УСЛУГИ</li>
-						</a>
-						<a href="#">
-							<li>АКЦИИ</li>
-						</a>
-						<a href="#">
-							<li>ПОЧИТАТЬ</li>
-						</a>
-						<a href="#">
-							<li>О СТУДИИ</li>
-						</a>
-						<a href="#">
-							<li>ОТЗЫВЫ</li>
-						</a>
-						<a href="#">
-							<li>НАШИ КОНТАКТЫ</li>
-						</a>
-						<a href="#">
-							<li>
-								<i class="fas fa-phone"></i> 9999999999999
-							</li>
-						</a>
-						<a href="#">
-							<li>
-									<i class="fab fa-telegram"></i>ТЕЛЕГРАМ
-							</li>
-						</a>
-						<a href="#">
-							<li>
-								<img width="30" src="./pictures/ru.png" alt="Русский">
-								<img width="30" src="./pictures/uz.png" alt="Узбекский">
-							</li>
-						</a>
+	<header class="header">
+		<div class="custom-container">
+			<div class="header__line">
+				<div class="logo">
+					<img src="./pictures/logo.png">
+				</div>
+				<nav class="ds-nav">
+					<ul class="ds-nav__nav-list nav-list">
+						<li class="nav-list__item">
+							<a class="nav-list__link btn-hover-up" href="#">Главная</a>
+						</li>
+						<li class="nav-list__item">
+							<a class="nav-list__link btn-hover-up" href="#">Услуги</a>
+						</li>
+						<li class="nav-list__item">
+							<a class="nav-list__link btn-hover-up" href="#">Акции</a>
+						</li>
+						<li class="nav-list__item">
+							<a class="nav-list__link btn-hover-up" href="#">Почитать</a>
+						</li>
+						<li class="nav-list__item">
+							<a class="nav-list__link btn-hover-up" href="#">Услуги</a>
+						</li>
+						<li class="nav-list__item">
+							<a class="nav-list__link btn-hover-up" href="#">Акции</a>
+						</li>
+						<li class="nav-list__item">
+							<a class="nav-list__link btn-hover-up" href="#">Почитать</a>
+						</li>
 					</ul>
+				</nav>
+				<div class="contact">
+					<a class="contact__link btn-hover-up" href="tel:+998 93 5281020" >
+						<i class="fa fa-phone"></i>
+						<span>+998 93 5281020</span>
+					</a>
+					<a class="contact__link btn-hover-up" href="tel:+998 93 5281020" >
+						<i class="fa fa-envelope"></i>
+						<span>+998 93 5281020</span>
+					</a>
 				</div>
-			</nav>
-			<!--Navbar-->
-			<nav>
-				<ul class="navbar">
-					<a href="#">
-						<li>logo</li>
+				<div class="ds-nav__lang lang">
+					<a class="lang__link btn-hover-up">
+						<img src="./pictures/ru.png">
 					</a>
-					<!-- <li><img src="./pictures/logo.png" alt="logo" width="50px"></li> -->
-					<a href="#">
-						<li>ГЛАВНАЯ</li>
+					<a class="lang__link btn-hover-up">
+						<img src="./pictures/uz.png">
 					</a>
-					<a href="#">
-						<li>УСЛУГИ</li>
-					</a>
-					<a href="#">
-						<li>АКЦИИ</li>
-					</a>
-					<a href="#">
-						<li>ПОЧИТАТЬ</li>
-					</a>
-					<a href="#">
-						<li>О СТУДИИ</li>
-					</a>
-					<a href="#">
-						<li>ОТЗЫВЫ</li>
-					</a>
-					<a href="#">
-						<li>НАШИ КОНТАКТЫ</li>
-					</a>
-					<a href="#">
-						<li>
-							<span style="font-size: 18px; color: Dodgerblue; margin-right: 3px;">
-								<i class="fas fa-phone"></i>
-							</span>
-							9999999999999
-						</li>
-					</a>
-					<a href="#">
-						<li>
-							<span style="font-size: 18px; color: Dodgerblue; margin-right: 3px;">
-								<i class="fab fa-telegram"></i>
-							</span>
-							ТЕЛЕГРАМ
-						</li>
-					</a>
-					<a href="#">
-						<li><img src="./pictures/ru.png" alt="Русский"></li>
-					</a>
-					<a href="#">
-						<li><img src="./pictures/uz.png" alt="Узбекский"></li>
-					</a>
-				</ul>
-			</nav>
-			<div class="custom-container">
-				<!-- <div class="custom-container"> -->
-				<!-- <div class="section"> -->
-				<div class="background-text">
-					<h1 style="color: white">
-						Лазерная эпиляция премиум класса в Ташкенте
-					</h1>
-					<div class="listInWallpaper">
-						<h3>–&nbsp; Удаление волос за 4-7 процедур </h3>
-						<h3>–&nbsp; Быстро и безболезненно </h3>
-						<h3>–&nbsp; Оборудование 2020 года</h3>
-						<h3>–&nbsp; Медицинский персонал</h3>
-					</div>
-					<button type="button" class="btn btn-light custom-button">Удалить Волосы!</button>
 				</div>
-				<!-- </div> -->
-				<!-- </div> -->
-			</div>
-		</div>
+			</div>	
+		</div>		
 	</header>
+
+
+	<main class="background-image">
+		<div class="custom-container">
+			<!-- <div class="custom-container"> -->
+			<!-- <div class="section"> -->
+			<div class="background-text">
+				<h1 style="color: white">
+					Лазерная эпиляция премиум класса в Ташкенте
+				</h1>
+				<div class="listInWallpaper">
+					<h3>–&nbsp; Удаление волос за 4-7 процедур </h3>
+					<h3>–&nbsp; Быстро и безболезненно </h3>
+					<h3>–&nbsp; Оборудование 2020 года</h3>
+					<h3>–&nbsp; Медицинский персонал</h3>
+				</div>
+				<button type="button" class="btn btn-light custom-button">Удалить Волосы!</button>
+			</div>
+			<!-- </div> -->
+			<!-- </div> -->
+		</div>
+	</main>
 
 	<!--Body-->
 	<div>
