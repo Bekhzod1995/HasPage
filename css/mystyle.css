@@ -4,6 +4,7 @@ body{
   height: 100vh;
   color: #DE006F !important;
   font-size: 16px;
+  font-family: "Temporary";
 }
   
 ul {
@@ -19,8 +20,8 @@ ul {
 .header__line {
   display: flex;
   align-items: center;
-  width: max-content;
-  margin: 0 auto;
+  /* width: max-content;
+  margin: 0 auto; */
 }
 
 .logo {
@@ -37,9 +38,9 @@ ul {
 }
 .nav-list__item {
 }
-.nav-list__item:first-child {
+/* .nav-list__item:first-child {
   margin-left: unset;
-}
+} */
 .nav-list__link {
   padding: 0 10px;
   height: 80px;
@@ -220,7 +221,7 @@ ul {
   display: flex;
   align-items: center;
   padding: 2rem 0;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 /*fixing bugs */
@@ -272,21 +273,12 @@ footer {
  * prefixes.
  */
 
-/* body
-{
-  margin: 0;
-  padding: 0;
-  
-  background: #232323;
-  color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
-} */
 
 #menuToggle
 {
   display: block;
   position: absolute;
-  top: 50px;
+  top: 20px;
   left: 50px;
   
   z-index: 1;
@@ -298,14 +290,14 @@ footer {
 #menuToggle a
 {
   text-decoration: none;
-  color: #232323;
+  color: white;
   
   transition: color 0.3s ease;
 }
 
 #menuToggle a:hover
 {
-  color: tomato;
+  color: #DE006F;
 }
 
 
@@ -337,7 +329,7 @@ footer {
   margin-bottom: 5px;
   position: relative;
   
-  background: #cdcdcd;
+  background: white;
   border-radius: 3px;
   
   z-index: 1;
@@ -399,7 +391,7 @@ footer {
   padding: 50px;
   padding-top: 125px;
   
-  background: #ededed;
+  background: #ff7da9;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -431,9 +423,12 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-  /* body {
-    
-  } */
+  .header__line {
+    flex-direction: row-reverse;
+  }
+  .new-ribbon {
+    flex-wrap: wrap;
+  }
 
   .ds-nav {
     display: none;
@@ -456,26 +451,11 @@ footer {
     /* overflow-x: hidden; */
   }
 
-  h1 {
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 18.72px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-
-  h4 {
-    font-size: 13.28px;
-  }
-
-  h5 {
-    font-size: 10.72px;
+  .background-text {
+    width: 65vw;
   }
 }
+
 
 .btn-light {
   background-color: #FF3B9D !important;
@@ -501,4 +481,15 @@ footer {
   outline-color: #DE006F!important;
   border-color: #DE006F !important;
   box-shadow: 0 0 0 0.2rem rgba(213,160,33, 0.5) !important
+}
+
+@media screen and (max-width: 700px) {
+  .background-text {
+    width: 90vw;
+  }
+}
+
+@font-face {
+  font-family: "Temporary";
+  src: url("../fonts/Robotocondensed.woff") format("woff")
 }

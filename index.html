@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="./fontawesome/all.css" type="text/css">
 	<link href="./css/hamburgers.css" rel="stylesheet">
-	
+
 	<!-- custom styles&js -->
 	<link rel="stylesheet" href="./css/mystyle.css">
 	<script src="./fontawesome/all.js"></script>
@@ -51,11 +51,11 @@
 					</ul>
 				</nav>
 				<div class="contact">
-					<a class="contact__link btn-hover-up" href="tel:+998 93 5281020" >
+					<a class="contact__link btn-hover-up" href="tel:+998 93 5281020">
 						<i class="fa fa-phone"></i>
 						<span>+998 93 5281020</span>
 					</a>
-					<a class="contact__link btn-hover-up" href="tel:+998 93 5281020" >
+					<a class="contact__link btn-hover-up" href="tel:+998 93 5281020">
 						<i class="fa fa-envelope"></i>
 						<span>+998 93 5281020</span>
 					</a>
@@ -68,15 +68,72 @@
 						<img src="./pictures/uz.png">
 					</a>
 				</div>
-			</div>	
-		</div>		
+				<nav role="navigation" class="mobileNav">
+					<div class="mobileNavPosition">
+						<div id="menuToggle">
+							<!--
+																					    A fake / hidden checkbox is used as click reciever,
+																					    so you can use the :checked selector on it.
+																					    -->
+							<input type="checkbox" />
+
+							<!--
+																					    Some spans to act as a hamburger.
+																					    
+																					    They are acting like a real hamburger,
+																					    not that McDonalds stuff.
+																					    -->
+							<span></span>
+							<span></span>
+							<span></span>
+
+							<!--
+																					    Too bad the menu has to be inside of the button
+																					    but hey, it's pure CSS magic.
+																					    -->
+							<ul id="menu">
+								<li>
+									<a href="#">ГЛАВНАЯ</a>
+								</li>
+								<li>
+									<a href="#">УСЛУГИ</a>
+								</li>
+								<li>
+									<a href="#">АКЦИИ</a>
+								</li>
+								<li>
+									<a href="#">ГЛАПОЧИТАТЬВНАЯ</a>
+								</li>
+								<li>
+									<a href="#">О СТУДИИ</a>
+								</li>
+								<li>
+									<a href="#">ОТЗЫВЫ</a>
+								</li>
+								<li>
+									<a href="#">НАШИ КОНТАКТЫ</a>
+								</li>
+								<li>
+									<i class="fas fa-phone"></i> +9999999999999
+								</li>
+								<li>
+									<i class="fab fa-telegram"></i>ТЕЛЕГРАМ
+								</li>
+								<li>
+									<img width="30" src="./pictures/ru.png" alt="Русский">
+									<img width="30" src="./pictures/uz.png" alt="Узбекский">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
 	</header>
 
 
 	<main class="background-image">
 		<div class="custom-container">
-			<!-- <div class="custom-container"> -->
-			<!-- <div class="section"> -->
 			<div class="background-text">
 				<h1 style="color: white">
 					Лазерная эпиляция премиум класса в Ташкенте
@@ -89,8 +146,6 @@
 				</div>
 				<button type="button" class="btn btn-light custom-button">Удалить Волосы!</button>
 			</div>
-			<!-- </div> -->
-			<!-- </div> -->
 		</div>
 	</main>
 
@@ -474,14 +529,14 @@
 		</div>
 		<div class="custom-container">
 			<div class="section">
-				<h1 style="text-align: center; font-weight: bold;">
-					ПОДГОТОВКА И ПРОТИВОПОКАЗАНИЯ
+				<h1 style="text-align: center;">
+					ПОДГОТОВКА
 				</h1>
 				<div class="spaces-between-blocks">
 					<div class="row">
 						<div class="col-md-4">
 							<h5 style="font-weight: bold;">О ПРОЦЕДУРЕ: </h5>
-							<p >
+							<p>
 								Процедура проводится 1 раз в 21-30 дней. Количество процедур подбирается индивидуально, в зависимости от
 								типа волос.
 								Среднее количество процедур 4-6. Эффект 100% гладкой кожи без волос достигается после прохождения
@@ -494,7 +549,7 @@
 						</div>
 						<div class="col-md-4">
 							<h5 style="font-weight: bold;">ПОДГОТОВКА: </h5>
-							<p >
+							<p>
 								-За 10-20 дней до процедуры лазерной эпиляции необходимо исключить все методы депиляции (шугаринг, воск,
 								выщипывание
 								пинцетом, электрический эпилятор). Допустимо только сбривание волос
@@ -507,7 +562,7 @@
 						</div>
 						<div class="col-md-4">
 							<h5 style="font-weight: bold;">УХОД ЗА КОЖЕЙ ПОСЛЕ : </h5>
-							<p >
+							<p>
 								-в течение 3 дней не посещать сауны, бани и бассейны;
 								-в течение 3 дней не наносить на кожу спирто-содержащие средства;
 								-в промежутках между процедурами для удаления отрастающих волос использовать только бритье;
