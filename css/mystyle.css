@@ -531,6 +531,12 @@ footer {
   box-shadow: 0 0 0 0.2rem rgba(213,160,33, 0.5) !important
 }
 
+/* .videoSection {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+} */
+
 @media screen and (max-width: 700px) {
   .background-text {
     width: 90vw;
@@ -540,4 +546,8 @@ footer {
 @font-face {
   font-family: "Temporary";
   src: url("../fonts/Robotocondensed.woff") format("woff")
+}
+
+.autoplay div {
+  border: 1px solid black;
 }
