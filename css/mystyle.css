@@ -554,3 +554,8 @@ footer {
   padding: 0 48px;
   max-width: 100%;
 }
+
+.card {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
