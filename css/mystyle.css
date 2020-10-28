@@ -548,6 +548,9 @@ footer {
   src: url("../fonts/Robotocondensed.woff") format("woff")
 }
 
-.autoplay div {
-  border: 1px solid black;
+.custom-container-slick {
+  width: 1430px;
+  margin: 0 auto;
+  padding: 0 48px;
+  max-width: 100%;
 }
